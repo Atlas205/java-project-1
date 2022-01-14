@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Header and footer</title>
+    <!--<link rel="shortcut icon" href="assets/img/favicon.png?v=2" type="image/x-icon"> -->
+    <link rel="stylesheet" href="../assets/style/p1.css" media="all">
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css%22%3E">
+    <script src="../assets/javascript/p1.js" defer></script>
+</head>
+
+<!--header-forms-text boxes---->
+
+
+<div id="wrapper">
+    <header>
+        <div class="container flexbox">
+            <div class="title">
+                <h1>interactive</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" target="_blank">Shop</a></li>
+                    <li><a href="#" target="_blank">Contact</a></li>
+                    <li><a href="#" target="_blank">About us</a></li>
+                    <li><a href="#" target="_blank">My account</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+</div>
+
+<body>
+
+
+
+
+
+
+    <div class="forms">
+        <h2>Temperature Converter</h2>
+        <p>Type a value in the Fahrenheit field to convert the value to Celsius:</p>
+
+        <p>
+            <label>Fahrenheit</label>
+            <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"
+                oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+        </p>
+        <p>Celcius: <span id="outputCelcius"></span></p>
+
+
+<p>Type a value in the Celsius field to convert the value to Fahrenheit:</p>
+
+<p>
+  <label>Celsius</label>
+  <input id="inputCelsius" type="number" placeholder="Celsius" oninput="temperatureConverter2(this.value)" onchange="temperatureConverter(this.value)">
+</p>
+<p>Fahrenheit: <span id="outputFahrenheit2"></span></p>
+    </div>
+
+    <div class="footer">
+        <button id="button" onclick="myFunction()">dark mode</button>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+<!--
+
+
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+-->
